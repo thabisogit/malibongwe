@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('personal_details', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('interest_id')->unsigned();
             $table->string('name');
             $table->string('surname');
             $table->timestamps();

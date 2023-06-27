@@ -18,8 +18,7 @@ class PersonalDetailsFactory extends Factory
     {
         return [
             'name' => fake()->firstName,
-            'surname' => fake()->lastName,
-            'interest_id' => now(),
+            'surname' => fake()->lastName
         ];
     }
 }
