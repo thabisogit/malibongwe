@@ -14,16 +14,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('register-user') }}">Register</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('query.task') }}">Complex Query</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('file.task') }}">File Manipulation</a>
+                    </li>
                 @else
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('create.ticket') }}">Log Ticket</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('edit.ticket') }}">Manage Tickets</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('edit.ticket') }}">Complex Query</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('signout') }}">Logout</a>

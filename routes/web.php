@@ -41,4 +41,8 @@ Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout')
 Route::get('ticket-status', [GuestController::class, 'index'])->name('ticket.status');
 Route::post('fetch-status', [GuestController::class, 'getTicketDetails'])->name('fetch.status');
 
+Route::get('query-task', [GuestController::class, 'queryTask'])->name('query.task');
+Route::post('get-data', [GuestController::class, 'getData'])->name('get.data');
+Route::get('file-task', [GuestController::class, 'fileTask'])->name('file.task');
+
 
